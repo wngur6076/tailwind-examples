@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-lighter">
     <div class="top-bar bg-white shadow grid grid-columns-12 px-8 py-3">
-        <div class="col-span-2 flex items-center">
+        <div class="col-span-12 lg:col-span-2 flex items-center">
             <div class="mr-8"><i class="fa fa-bars text-gray-darker"></i></div>
             <div><a href="#"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="w-24 style-scope ytd-topbar-logo-renderer"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
                 <g class="style-scope ytd-topbar-logo-renderer">
@@ -54,16 +54,16 @@
                 </g>
               </g></svg></a></div>
         </div>
-        <div class="col-span-10 flex items-center justify-between">
+        <div class="col-span-12 lg:col-span-10 flex items-center flex-col lg:flex-row justify-between">
             <div>
                 <form action="#" class="flex">
-                    <input type="text" class="border border-gray py-1 px-2 w-128 shadow-inner" placeholder="Search">
+                    <input type="text" class="border border-gray py-1 px-2 w-64 lg:w-128 shadow-inner" placeholder="Search">
                     <button type="submit" class="border-t border-r border-b border-gray py-1 px-6 bg-gray-50 hover:bg-gray-light">
                         <i class="fa fa-search text-gray-600"></i>
                     </button>
                 </form>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center mt-4 lg:mt-8">
                 <a href="#"><i class="fa fa-upload text-gray-600 mr-8"></i></a>
                 <a href="#"><i class="fa fa-calendar text-gray-600 mr-8"></i></a>
                 <a href="#"><i class="fa fa-bell text-gray-600 mr-8"></i></a>
@@ -74,7 +74,7 @@
     {{-- end top-bar --}}
 
     <div class="youtube-body grid grid-columns-12">
-        <div class="left-sidebar col-span-2 py-6 bg-gray-custom min-h-screen">
+        <div class="left-sidebar col-span-12 lg:col-span-2 py-6 bg-gray-custom min-h-screen">
             <div class="mb-6">
                 <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-gray">
                     <i class="fa fa-home fa-lg fa-fw text-red mr-4"></i>
@@ -91,22 +91,169 @@
             </div>
         </div>
         {{-- end left-sidebar --}}
-        <div class="youtobe-videos col-span-10 container mx-auto py-6">
+        <div class="youtobe-videos col-span-12 lg:col-span-10 container mx-auto py-6">
             <div class="font-semibold mb-6">
                 Recommanded
             </div>
-            <div class="grid grid-columns-5 grid-gap-2 mb-6">
+            <div class="grid grid-columns-1 lg:grid-columns-5 grid-gap-4 mb-6">
                 <div>
                     <a href="#">
-                        <img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75">
+                        <img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full w-full">
                         <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
                     </a>
                 </div>
-                <div>two</div>
-                <div>three</div>
-                <div>four</div>
-                <div>five</div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail02.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail03.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail04.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail05.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
 
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail02.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail03.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail04.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail05.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <a href="#" class="text-sm text-gray-darker uppercase">Show More</a>
+            </div>
+
+            <div class="border-b border-solid mb-6"></div>
+
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center">
+                    <a href="#"><img src="/img/youtube/avatar1.jpg" alt="avatar" class="rounded-full w-8 mr-2"></a>
+                    <a href="#" class="font-semibold text-black">TubeBuddy</a>
+                </div>
+                <a href="#"><div class="text-2xl font-light text-gray-darker hover:text-gray-darkest">&times;</div></a>
+            </div>
+
+            <div class="grid grid-columns-1 lg:grid-columns-5 grid-gap-4 mb-6">
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail02.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail03.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail04.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail05.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75 w-full">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                        <div class="text-sm"><a href="#" class="text-gray-darker hover:text-black">DashieGames</a><i class="fa fa-check-circle"></i></div>
+                        <div class="text-sm text-gray-darker">618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center">
+                    <a href="#"><img src="/img/youtube/avatar2.jpg" alt="avatar" class="rounded-full w-8 mr-2"></a>
+                    <a href="#" class="font-semibold text-black">Andre Medarang</a>
+                </div>
+                <a href="#"><div class="text-2xl font-light text-gray-darker hover:text-gray-darkest">&times;</div></a>
+            </div>
+
+            <div class="flex flex-col lg:flex-row">
+                <a href="#" class="mr-4"><img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1"></a>
+                <div class="w-128 max-w-full">
+                    <div class="mb-1"><a href="#" class="text-black">Machine Learning Tutorial for Beginners - USING JAVASCRIPT!</a></div>
+                    <div class="text-sm mb-3"><a href="#" class="text-gray-darker hover:text-black">DashieGames &middot; 12K views &middot;
+                        3 months age <i class="fa fa-check-circle"></i></a></div>
+                    <div class="text-sm"><a href="#" class="text-gray-darker leading-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sequi ea, tempora, enim magni reprehenderit esse accusamus voluptate earum vel et ab nulla beatae repellat fugiat ullam iste. Dolor, dolorem.</a></div>
+                </div>
             </div>
         </div>
 
