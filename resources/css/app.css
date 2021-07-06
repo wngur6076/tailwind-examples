@@ -1,0 +1,26 @@
+@import "~tailwindcss/base.css";
+@import "~tailwindcss/components.css";
+@import "~tailwindcss/utilities.css";
+
+a {
+    text-decoration: none;
+    @apply text-teal-300;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.top-nav-item {
+    @apply text-gray-500 text-sm mr-4 font-semibold pb-6 border-b-2 border-solid border-transparent;
+}
+
+.top-nav-item:hover {
+    text-decoration: none;
+    @apply text-teal-300 border-teal-300;
+}
+
+.hero {
+    background: url('/img/twitter/tailwind_bg.jpg');
+    @apply bg-cover bg-no-repeat;
+}
