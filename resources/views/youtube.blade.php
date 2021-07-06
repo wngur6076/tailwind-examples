@@ -7,10 +7,10 @@
     <title>Tailwind Example - Youtube</title>
     <link rel="stylesheet" href="/css/youtube.css">
 </head>
-<body class="bg-gray-light">
+<body class="bg-gray-lighter">
     <div class="top-bar bg-white shadow grid grid-columns-12 px-8 py-3">
         <div class="col-span-2 flex items-center">
-            <div class="mr-8"><i class="fa fa-bars text-gray-400"></i></div>
+            <div class="mr-8"><i class="fa fa-bars text-gray-darker"></i></div>
             <div><a href="#"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="w-24 style-scope ytd-topbar-logo-renderer"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
                 <g class="style-scope ytd-topbar-logo-renderer">
                   <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
@@ -54,17 +54,64 @@
                 </g>
               </g></svg></a></div>
         </div>
-        <div class="col-span-10">
+        <div class="col-span-10 flex items-center justify-between">
             <div>
                 <form action="#" class="flex">
-                    <input type="text" class="border border-gray-400 py-1 px-2 w-128" placeholder="Search">
-                    <button type="submit" class="border-t border-r border-b border-gray-400 py-1 px-6 bg-gray-50 hover:bg-gray-light">
+                    <input type="text" class="border border-gray py-1 px-2 w-128 shadow-inner" placeholder="Search">
+                    <button type="submit" class="border-t border-r border-b border-gray py-1 px-6 bg-gray-50 hover:bg-gray-light">
                         <i class="fa fa-search text-gray-600"></i>
                     </button>
                 </form>
             </div>
+            <div class="flex items-center">
+                <a href="#"><i class="fa fa-upload text-gray-600 mr-8"></i></a>
+                <a href="#"><i class="fa fa-calendar text-gray-600 mr-8"></i></a>
+                <a href="#"><i class="fa fa-bell text-gray-600 mr-8"></i></a>
+                <a href="#"><img src="/img/youtube/avatar-top.jpg" alt="avatar" class="w-8 rounded-full"></a>
+            </div>
         </div>
     </div>
+    {{-- end top-bar --}}
+
+    <div class="youtube-body grid grid-columns-12">
+        <div class="left-sidebar col-span-2 py-6 bg-gray-custom min-h-screen">
+            <div class="mb-6">
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-gray">
+                    <i class="fa fa-home fa-lg fa-fw text-red mr-4"></i>
+                    <span class="font-semibold text-sm">Home</span>
+                </a>
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-gray">
+                    <i class="fa fa-home fa-lg fa-fw text-gray-darker mr-4"></i>
+                    <span class="font-semibold text-sm">Trending</span>
+                </a>
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-gray">
+                    <i class="fa fa-home fa-lg fa-fw text-gray-darker mr-4"></i>
+                    <span class="font-semibold text-sm">Subscriptions</span>
+                </a>
+            </div>
+        </div>
+        {{-- end left-sidebar --}}
+        <div class="youtobe-videos col-span-10 container mx-auto py-6">
+            <div class="font-semibold mb-6">
+                Recommanded
+            </div>
+            <div class="grid grid-columns-5 grid-gap-2 mb-6">
+                <div>
+                    <a href="#">
+                        <img src="/img/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 transition-slow hover:opacity-75">
+                        <div class="text-sm mb-2"><a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGITMARE MODE!!</a></div>
+                    </a>
+                </div>
+                <div>two</div>
+                <div>three</div>
+                <div>four</div>
+                <div>five</div>
+
+            </div>
+        </div>
+
+    </div>
+    {{-- end yotobe-body --}}
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://use.fontawesome.com/ed2c84e67c.js" defer></script>
